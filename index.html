@@ -19,6 +19,7 @@
             display: flex;
             justify-content: center;
             gap: 20px;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
         }
         .profile-card {
             width: 150px;
@@ -47,6 +48,20 @@
             color: #fff;
             border: 1px solid #fff;
         }
+        /* Responsive layout for smaller screens */
+        @media (max-width: 576px) {
+            .profile-container {
+                flex-direction: column;
+                align-items: center;
+                display: grid;
+                grid-template-columns: auto auto      ;
+            }
+            .profile-card {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -54,10 +69,7 @@
         <div class="header-cont container">
             <div class="left-cont">
                 <img decoding="async" class="header-brand" src="https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=684&h=456" alt="">
-              
             </div>
-            
-            
         </div>
     </header>
 
