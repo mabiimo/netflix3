@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
+    <link rel="stylesheet" href="style.css"> 
+    <!-- <script src="index.js" defer></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+ </head>
+<body>
+
+    <header id="header" class="header-linear">
+        <div class="header-cont container">
+            <div class="left-cont">
+                <img decoding="async" class="header-brand" src="https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=684&h=456" alt="">
+                <ul class="main-nav">
+                    <li class="nav-item active">Home</li>
+                    <li class="nav-item">Tv Shows</li>
+                    <li class="nav-item">Movies</li>
+                    <li class="nav-item">News & Popular</li>
+                    <li class="nav-item">My List</li>
+                    <!-- <li class="nav-item">Browse by Languages</li> -->
+                </ul>
+            </div>
+            <div class="right-cont">
+                
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="search-icon">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 11C13 13.7614 10.7614 16 8 16C5.23858 16 3 13.7614 3 11C3 8.23858 5.23858 6 8 6C10.7614 6 13 8.23858 13 11ZM14.0425 16.2431C12.5758 17.932 10.4126 19 8 19C3.58172 19 0 15.4183 0 11C0 6.58172 3.58172 3 8 3C12.4183 3 16 6.58172 16 11C16 11.9287 15.8417 12.8205 15.5507 13.6497L24.2533 18.7028L22.7468 21.2972L14.0425 16.2431Z" fill="currentColor"></path>
+                </svg>
+                
+                <li class="nav-item">Children</li>
+                <!-- Bell Icon -->
+                <svg  fill="#ffffff" width="21" height="21"  viewBox="0 0 32 32" id="Lager_95" data-name="Lager 95" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Rectangle_1" data-name="Rectangle 1" transform="translate(4)" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="4">
+                      <path d="M12,0h0A12,12,0,0,1,24,12V24a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V12A12,12,0,0,1,12,0Z" stroke="none"/>
+                      <path d="M12,2h0A10,10,0,0,1,22,12v8a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V12A10,10,0,0,1,12,2Z" fill="none"/>
+                    </g>
+                    <rect id="Rectangle_2" data-name="Rectangle 2" width="32" height="4" rx="2" transform="translate(0 20)" fill="#ffffff"/>
+                    <path id="Path_9" data-name="Path 9" d="M16,32h0a4,4,0,0,1-4-4V26h8v2A4,4,0,0,1,16,32Z" fill="#ffffff"/>
+                  </svg>
+                
+                <img style="border-radius: 5px;" class="user" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="user" />
+            </div>
+            
+        </div>
+    </header>
+    
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color: #000000; color: white;">
+                <div class="modal-body" style="padding: 0; position: relative;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; top: 10px; right: 10px; z-index: 10;">
+                        <span style=" color: white;" aria-hidden="true">&times;</span>
+                    </button>
+                    <img src="https://images.unsplash.com/photo-1720048170970-3848514c3d60?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8" alt="" style="width: 100%; height: 100%; object-fit: cover; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+
+                    <p style="background-color: #000000;" class=" p-4 rounded-bottom">I tried this first and it doesn't work at all. It seems bootstrap puts the .modal-backdrop element in an entirely separate place in the DOM, not nested within the #myModal element. So the id #myModal has nothing to do with the .modal-backdrop and the CSS style is ignored</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-lg modal-dong" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-body" style="padding: 0; position: relative; background-color: #000000; color: white;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; top: 10px; right: 10px; z-index: 10;">
+                    <span style="color: white;" aria-hidden="true">&times;</span>
+                </button>
+                
+                <div style="position: relative; width: 100%; height: 100%;">
+                    <img src="image/popup.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                    
+                    <!-- Overlay with gradient -->
+                    <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: 40%; background: linear-gradient(to bottom,transparent, rgb(0, 0, 0)); border-top-left-radius: 5px; border-top-right-radius: 5px;"></div>
+                </div>
+    
+                <p style="background-color: #000000;" class="image p-4 rounded-bottom">
+                    Tiara, I knew I loved you because I don’t just think about you when I’m alone. I think about you when
+                    I’m having a blast in a room full of people I love, but still wish you were there to experience it too. I
+                    know I may not be perfect, but my love for you is perfect, hehe :D.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content" style="background-color: #000000; color: white;">
+                <div class="modal-body" style="padding: 0; position: relative;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="position: absolute; top: 10px; right: 10px; z-index: 10;">
+                        <span style="color: white;" aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="video" >
+                        <video class="embed-responsive-item" controls style="width: 100%; " preload="auto">
+                            <source src="image/copy_9E399D08-04FF-492A-A230-16002D252D9D(1).mp4" type="video/mp4">
+                           
+                        </video>
+                    </div>
+                    <p style="background-color: #000000;" class="image p-4 rounded-bottom">
+Setelah pacaran hampir setahun, memang rasanya masih sama? Barangkali kamu pernah ngerasa
+belakangan ini aku beda atau apa ga kaya dulu, aku minta maaf ya sayang. Mungkin aku udah ga se
+menggebu gebu kaya pas awal pacarana, tapi sekatang kalo ga lagi sama kamu kaya ada sesuatu yang
+kurang aja rasanya. Kalo ditanya “kok masih sayang sama Tiara, apa yang buat bertahan?” Mungkin
+aku bakal jawab, “karena cintanya bukan lagi seperti api yang membara tapi seperti api unggun yang
+hangat”. Cause you’re my safe place, I love you sayang, happy birthday
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+    <div class="banner-section" id="banner-section">
+        <div class="banner_fadeBottom">
+            <h5 class="banner__title">All about Tiara</h5>
+            <p class="banner__info">Happy birthday sayang!!! | Proverbs 31:26  </p>
+            <p class="banner__overview">I just wanted you to know, there will always be a piece of you in me always, and
+                I’m grateful for that. Whatever someone you become, wherever you are in the world, I’m sending
+                you love, you’re my lover until the end. I love you simply, without complications or pride.</p>
+            <div class="action-buttons-cont">
+                <button class="action-button" type="button"  data-toggle="modal" data-target="#exampleModal2"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="Hawkins-Icon Hawkins-Icon-Standard"><path d="M4 2.69127C4 1.93067 4.81547 1.44851 5.48192 1.81506L22.4069 11.1238C23.0977 11.5037 23.0977 12.4963 22.4069 12.8762L5.48192 22.1849C4.81546 22.5515 4 22.0693 4 21.3087V2.69127Z" fill="currentColor"></path></svg> &nbsp;&nbsp; Play</button>
+                
+    <button type="button" class="action-button" data-toggle="modal" data-target=".bd-example-modal-lg"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="Hawkins-Icon Hawkins-Icon-Standard"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3ZM1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12ZM13 10V18H11V10H13ZM12 8.5C12.8284 8.5 13.5 7.82843 13.5 7C13.5 6.17157 12.8284 5.5 12 5.5C11.1716 5.5 10.5 6.17157 10.5 7C10.5 7.82843 11.1716 8.5 12 8.5Z" fill="currentColor"></path></svg> &nbsp;&nbsp; More Info</button>
+               
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <div class="grid-container2" style="background-color: #121212;">
+        <h5 style="color: white; font-weight: bold;">Tiara</h5>
+    </div>
+    <div class="grid-container px-3 py-1" style="background-color: #121212;">
+
+        <img class="grid-item" src="image/00989eac-9a3f-4ccf-a4be-b85c7b983a12.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/06918a64-84b5-47ab-8595-8b48d7a9a556.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/238099d1-6a04-4035-88d9-2ee106cece40.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/28f6e8c8-44df-4dbb-91bb-986ae22cc933.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/5e36abfe-ecb6-4ba3-9e1f-39e7f79e54bf.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/5fc6cf14-0c1d-49ce-a378-7228b8e613bd.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/724d5f38-1f10-4787-903b-93e1db247c06.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/9FDA92E5-05AE-4B45-94A5-5228C6B8A808.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/d8e0a977-274e-4def-b8e3-5ec7af4d79cc.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_2121.jpg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_2467.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_3029.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_4486.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_6087.jpg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_6116.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_7105.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_7311.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_7752.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/9ad981fa-ee14-4e25-b574-2902ceff02a9.JPG" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/69B9AA65-425E-41D2-B998-28DBFC7B8020.JPG" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/d068dd68-fa81-4c37-a398-57c694a85eeb.JPG" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_0215 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_0625 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_0693 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_1137 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_1156 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_1365 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_3418 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_3466 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_3475 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_3502 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_3505 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_3506 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_3507 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_3526 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_3560 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_6746 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_6756 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_6922 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_7681 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_8572 Medium.jpeg" alt="test" loading="lazy" />
+        <img class="grid-item" src="image/IMG_9530 Medium.jpeg" alt="test" loading="lazy" />
+        <!-- <img class="grid-item" src="image/IMG_3029.HEIC" alt="test" /> -->
+      </div>  
+    </div>
+
+
+
+
+</body>
+</html>
+
+<script>
+    window.addEventListener("scroll", function() {
+    const header = document.querySelector("header");
+    if (window.scrollY > 50) { // Ubah angka ini sesuai kebutuhan
+        header.classList.add("black-bg");
+    } else {
+        header.classList.remove("black-bg");
+    }
+});
+
+
+</script>
